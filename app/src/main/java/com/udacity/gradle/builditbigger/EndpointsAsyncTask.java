@@ -43,7 +43,7 @@ public class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
         try {
             return myApiService.tellJoke().execute().getText();
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
     }
 
